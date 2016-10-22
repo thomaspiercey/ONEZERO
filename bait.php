@@ -288,7 +288,7 @@
 <!-- jQuery --> 
 <script src="js/modernizr.js"></script> <!-- Modernizr -->
 <script src="js/jquery.js"></script> 
-<script src="js/params.js"></script>
+
 <!-- Popup -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 

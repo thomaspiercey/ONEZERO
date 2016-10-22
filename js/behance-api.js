@@ -23,12 +23,9 @@ var userID  = 'onezero10';
     };
 })();
 
-var behancelink = getAllUrlParams().project;
-var  projectID = behancelink;
-// This function below to compile the portfolio template into the Content
 (function() {
-    //var perPage = 10;
-    var behanceProjectAPI = 'http://www.behance.net/v2/projects/'+ projectID +'?callback=?&api_key=' + apiKey;
+    var perPage = 12;
+    var behanceProjectAPI = 'http://www.behance.net/v2/users/'+ userID +'/projects?callback=?&api_key=' + apiKey + '&per_page=' + perPage;
  
     function setPortfolioTemplate() {
         var projectData = JSON.parse(sessionStorage.getItem('behanceProject')),

@@ -73,16 +73,7 @@
 
                 <header id="header" class="portfolio-header clearfix hidden ">
                     <script id="profile-template" type="text/x-handlebars-template">
-                        <figure class="profile-avatar"><img src="{{user.images.[138]}}" alt=""></figure>
-                                <h1 class="profile-name">{{user.display_name}}</h1>
-                                <div class="profile-fields">
-                                    <ul class="field-list">
-                                        {{#each user.fields}}
-                                            <li class="field-item">{{this}}</li>
-                                        {{/each}}
-                                    </ul>
-                                </div>
-                        <div class="profile-location fi-marker">{{user.city}}, {{user.country}}</div>
+                        
                     </script>
               </header>
 
@@ -93,45 +84,7 @@
                       <script id="portfolio-template" type="text/x-handlebars-template">
                                
 
-                      <ul class="portfolio-list clearfix">
-                        <!-- Intro Box -->
-                        <div class="col-lg-4 col-md-12">
-                        <li class="portfolio-item intro-box">  
-                                <div class="portfolio-content">
-                                    <ol class="list-bait">
-                                      <li>B</li>
-                                      <li>A</li>
-                                      <li>I</li>
-                                      <li>T</li>
-                                    </ol>
-                                    <hr class="lite">
-                                    <h2> Project BAIT </h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit urna, tempor eu sagittis quis, volutpat vitae elit. Vestibulum vulputate cursus ex sed molestie. </p>
-                                </div>
-                         </li>
-                         </div>
-                          {{#each projects}}
-                          <div class="col-lg-4 col-md-12">
-                          <li class="portfolio-item">  
-                                <div class="portfolio-content">
-                                <a href="project-page.php?project={{this.id}}">
-                                    <figure class="portfolio-cover" title="{{this.name}}" data-project-id="{{this.id}}">
-                                        {{#if this.covers.[404]}}
-                                        <img class="portfolio-image" src="{{this.covers.[404]}}" alt="">
-                                        {{else}}
-                                            {{#if this.covers.[230]}}
-                                            <img class="portfolio-image" src="{{this.covers.[230]}}" alt="">
-                                            {{else}}
-                                            <img class="portfolio-image" src="{{this.covers.[202]}}" alt="">
-                                            {{/if}}
-                                        {{/if}}
-                                    </figure>
-                                    </a>
-                                 </div>
-                          </li>
-                          </div>
-                          {{/each}}
-                      </ul>
+                      
                       </script>
                   </main>
             </div> 

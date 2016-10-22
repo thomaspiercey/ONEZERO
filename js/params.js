@@ -64,18 +64,16 @@ var behancelink = getAllUrlParams().project;
 var   projectID = behancelink,
         beProjectContentAPI = 'http://www.behance.net/v2/projects/'+ projectID +'?callback=?&api_key=' + apiKey,
         keyName = 'behanceProjectImages-' + projectID;
-
+var container = $('#portfolio');
  $.getJSON(beProjectContentAPI, function(projectContent) {
             var src = [];
-            $.each(projectContent.project.modules, function(index, mod) {
-                if(mod.src != undefined) {
-                    src.push({ src: mod.src }); 
-                    console.log(keyName)
+            $.each(projectContent.project.modules, function(index, obj) {
+                if(obj.src != undefined) {
+                    src.push({ src: obj.src }); 
+                    console.log(obj.src);
+                    container.append(' <div class="col-lg-4 col-md-12"><li class="portfolio-item"><div class="portfolio-content"><figure class="portfolio-cover"><img class="portfolio-image" src="'+ obj.src +'" alt=""></figure></div></li></div>');
                 }
             });
-            var data = JSON.stringify(src);
-            localStorage.setItem(keyName, data);
-            console.log(data);
         });
 
 console.log(beProjectContentAPI);
