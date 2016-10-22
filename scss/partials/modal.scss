@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+5.0 Modal
+--------------------------------------------------------------*/
+.fade.in {
+    opacity: 1;
+    background: rgba(0,0,0,0.80);
+}
+.close {
+    float: right;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=90);
+    opacity: 1;
+}
+.close:focus, .close:hover {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .6;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    opacity: 1.4;
+}
+
+.modal-content {
+    position: relative;
+    background-color: transparent;
+    color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal-header {
+    padding: 20px 15px 5px 15px;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px 15px;
+}
+
+
+
+
+.onezero-text {
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    left:2px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);   
+}
+
+.onezero-contact-details {
+    color: #000;
+    position: fixed;
+    font-size: 16px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+    right: -131px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.onezero-close {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+
+
+
+
+
+

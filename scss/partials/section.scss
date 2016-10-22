@@ -1,0 +1,36 @@
+.intro-section {
+    height: 100%;
+    padding-top: 77px;
+    text-align: center;
+    background: #000000;
+}
+@media(min-width:767px) {
+        .intro-section {
+        height: 100%;
+        padding-top:0;
+        text-align: center;
+        background: #fff;
+    }   
+}
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+.services-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+.icon {
+    font-size: 1.7em !important;    
+}
+

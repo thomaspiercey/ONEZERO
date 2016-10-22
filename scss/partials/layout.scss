@@ -1,0 +1,79 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Droid Sans', sans-serif;
+    color: #000000;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #888;
+}
+
+.no-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.lite {
+    width:15%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 97.5%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+.container {
+    width: 97.5%;
+}
+}
+
+.list-bait {
+    padding-left: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.list-bait>li {
+    display: inline-block;
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2px 5px;
+}
+
+.box-a {
+    height: 100%;
+
+}
+
+.box-b {
+        height: 100%;
+        background-color: gainsboro;
+        margin: 0px auto;        
+}
+@media (min-width: 768px) {
+        .box-b {
+        margin: 90px auto;        
+        }
+    }
+
+.box-b .content {
+    padding:4%;
+}
+
+.active-overflow-y {
+    overflow-y: scroll!important;
+}

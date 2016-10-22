@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+4.0 Typography
+--------------------------------------------------------------*/
+
+.h1, .h2 { 
+    font-family: 'Montserrat', sans-serif;
+    color: inherit;
+}
+
+ .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+p {
+    letter-spacing: 3pt;
+}
+
+.text-lg {
+    font-size: 1.6em;
+    letter-spacing: 3pt;    
+}
+.text-xlg {
+    font-size: 3.5em;
+    letter-spacing: 6pt;
+    line-height: 1.2 ;  
+}
+
+.text-caps {
+    text-transform: uppercase;  
+}
+
+.text-fat {
+    font-weight: 700;   
+}
+
+.font-change {
+    font-family: 'Montserrat', sans-serif;
+}
